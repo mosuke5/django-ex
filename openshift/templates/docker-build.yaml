@@ -19,4 +19,4 @@ spec:
 kind: ImageStream
 apiVersion: image.openshift.io/v1
 metadata:
-  name: docker-build-django
+  name: docker-build-django-ex
