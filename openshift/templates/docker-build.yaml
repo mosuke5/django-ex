@@ -1,0 +1,17 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  name: django-ex
+spec:
+  output:
+    to:
+      kind: ImageStreamTag
+      name: django-ex:latest
+  source:
+    git:
+      uri: https://github.com/mosuke5/django-ex
+    type: Git
+  strategy:
+    dockerStrategy:
+      dockerfilePath: Dockerfile
+    type: Docker
